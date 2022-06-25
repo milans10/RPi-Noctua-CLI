@@ -56,7 +56,7 @@ class Aktualne:
         teplota_hodnota = (vystup_mereni.replace("temp=", "").replace("'C\n", ""))
         teplota_hodnota = str(int(round(float(teplota_hodnota), 0)))
 
-        teplota = Text(str("\nAktuální teplota: " + teplota_hodnota + " °C"), justify="left", style="white")
+        teplota = Text(str("\nAktuální teplota: " + teplota_hodnota + " °C"), justify="center", style="white")
         if float(teplota_hodnota) <= 50.0:
             teplota.stylize("green", 19)
         elif 50.0 < float(teplota_hodnota) < 65.0:
